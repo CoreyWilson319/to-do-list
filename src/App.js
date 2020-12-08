@@ -1,17 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import './ListItem.css';
 import ListItem from './components/ListItem'
 
 function App() {
-  const doThis = ["Yard Work", "Dishes", "Feed the pets"]
+  const list = ["Yard Work", "Dishes", "Feed the pets"]
+  let todos = list.map((todo, index) => {
+    return <ListItem list={todo} key={`list-item-${index}`} />
+  })
   return (
-    <div>
-      <header>My List</header>
+    <div className="body">
+      <header className="title">My List</header>
       <div>
-        <ul>
-          <ListItem list={doThis[0]}/>
-          <ListItem list={doThis[1]}/>
-          <ListItem list={doThis[2]}/>
+        <ul className="list">
+          {todos}
         </ul>
       </div>
     </div>

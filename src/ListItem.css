@@ -1,0 +1,15 @@
+.list {
+    font-size: 22px;
+    text-align: center;
+    list-style: none;
+    color: white
+}
+
+.title {
+    font-size: 44px;
+    text-align: center;
+    color: white
+}
+body {
+    background-color: red;
+}
