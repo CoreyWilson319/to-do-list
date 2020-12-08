@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import ListItem from './components/ListItem'
 
 function App() {
+  const doThis = ["Yard Work", "Dishes", "Feed the pets"]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header>My List</header>
+      <div>
+        <ul>
+          <ListItem list={doThis[0]}/>
+          <ListItem list={doThis[1]}/>
+          <ListItem list={doThis[2]}/>
+        </ul>
+      </div>
     </div>
   );
 }
