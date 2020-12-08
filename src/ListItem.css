@@ -1,15 +1,19 @@
 .list {
     font-size: 22px;
     text-align: center;
-    list-style: none;
-    color: white
+    list-style: square;
+    list-style: inside;
+    color: white;
+    font-family: 'Nerko One', cursive;
 }
 
 .title {
     font-size: 44px;
     text-align: center;
-    color: white
+    color: white;
+    font-family: 'Nerko One', cursive;
+    text-decoration: underline;
 }
 body {
-    background-color: red;
+    background-color: black;
 }
