@@ -1,5 +1,5 @@
 .list {
-    font-size: 22px;
+    font-size: 44px;
     text-align: center;
     list-style: square;
     list-style: inside;
@@ -8,7 +8,7 @@
 }
 
 .title {
-    font-size: 44px;
+    font-size: 88px;
     text-align: center;
     color: white;
     font-family: 'Nerko One', cursive;
